@@ -1,10 +1,13 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -29,7 +32,7 @@ public class Controller {
     private Button BtnEdit;
 
     @FXML
-    void initialize() {
+    void initialize(){} /*{
         BtnAdd.setOnAction(actionEvent -> {
             BtnAdd.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
@@ -65,7 +68,42 @@ public class Controller {
             stage.showAndWait();
         });
 
+    }*/
+
+    public void showDialog(ActionEvent actionEvent) {
+        try {
+            Stage stage = new Stage();
+            Parent root = FXMLLoader.load(getClass().getResource(("Add.fxml")));
+            stage.setTitle("Create");
+            stage.setMinWidth(300);
+            stage.setResizable(false);
+            stage.setScene(new Scene(root));
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(((Node)actionEvent.getSource()).getScene().getWindow());
+            stage.show();
+
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
+    public void showDialog2(ActionEvent actionEvent) {
+        try {
+            Stage stage = new Stage();
+            Parent root = FXMLLoader.load(getClass().getResource(("Edit.fxml")));
+            stage.setTitle("Edit");
+            stage.setMinWidth(300);
+            stage.setResizable(false);
+            stage.setScene(new Scene(root));
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(((Node)actionEvent.getSource()).getScene().getWindow());
+            stage.show();
+
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
 

@@ -60,7 +60,7 @@ public class AddController {
 
     }
 
-  //  private void saveUser(String nameText, String ageText, DatePicker birthdayText) {
-  //  }
+   private void saveUser(String nameText, String ageText, DatePicker birthdayText) {
+   }
 
 }

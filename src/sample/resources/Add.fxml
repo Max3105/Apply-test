@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddController">
+   <children>
+      <Button fx:id="BtnCancel" layoutX="337.0" layoutY="223.0" mnemonicParsing="false" text="Cancel" AnchorPane.bottomAnchor="33.400000000000006" AnchorPane.rightAnchor="84.80000000000001" />
+      <Button fx:id="BtnSave" layoutX="78.0" layoutY="223.0" mnemonicParsing="false" text="Save" AnchorPane.bottomAnchor="33.4" AnchorPane.leftAnchor="78.0" />
+      <AnchorPane layoutX="137.0" layoutY="23.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="136.0" AnchorPane.topAnchor="23.0">
+         <children>
+            <TextField fx:id="age_field" layoutX="25.0" layoutY="87.0" text="Age" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.400000000000006" AnchorPane.topAnchor="87.0" />
+            <TextField fx:id="name_field" layoutX="25.0" layoutY="26.0" text="Name" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.400000000000006" AnchorPane.topAnchor="26.0" />
+            <DatePicker fx:id="birthday_field" layoutX="12.0" layoutY="146.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.800000000000011" AnchorPane.topAnchor="146.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
