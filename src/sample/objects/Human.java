@@ -8,12 +8,13 @@ import java.time.LocalDate;
 public class Human {
     private String name;
     private String age;
-    private Date birthday;
+    private String birthday;
 
-    public Human(String name3, String s, LocalDate date) {
-
+    public Human(String name, String age, String birthday) {
+        this.name = name;
+        this.age = age;
+        this.birthday = birthday;
     }
-
 
     public String getName(){
         return name;
@@ -27,11 +28,19 @@ public class Human {
     public void setAge(String age){
         this.age = age;
     }
-    public Date getBirthday(){
+    public String getBirthday(){
         return birthday;
     }
-    public void setBirthday(Date birthday){
+    public void setBirthday(String birthday){
         this.birthday = birthday;
     }
 
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                ", birthday=" + birthday +
+                '}';
+    }
 }
