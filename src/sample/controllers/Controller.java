@@ -173,25 +173,25 @@ public class Controller {
         {
             // Create all persons
             // First level
-            Human person1 = new Human ("FirstName1", "LastName1", LocalDate.of(1930, 1, 1));
+            Human person1 = new Human ("Name1", "56", LocalDate.of(1930, 1, 1));
 
             // Second level
-            Human  person2 = new Human ("FirstName2", "LastName2", LocalDate.of(1956, 12, 17));
-            Human  person3 = new Human ("FirstName3", "LastName3", LocalDate.of(1961, 3, 1));
-            Human person4 = new Human ("FirstName4", "LastName4", LocalDate.of(1968, 1, 12));
-            Human  person5 = new Human ("FirstName5", "LastName5", LocalDate.of(1978, 4, 14));
+            Human  person2 = new Human ("Name2", "48", LocalDate.of(1956, 12, 17));
+            Human  person3 = new Human ("Name3", "8", LocalDate.of(1961, 3, 1));
+            Human person4 = new Human ("Name4", "7", LocalDate.of(1968, 1, 12));
+            Human  person5 = new Human ("Name5", "47", LocalDate.of(1978, 4, 14));
 
             // Third level
-            Human  person6 = new Human ("FirstName6", "LastName6", LocalDate.of(1980, 5, 10));
-            Human  person7 = new Human ("FirstName7", "LastName7", LocalDate.of(1981, 3, 20));
-            Human  person8 = new Human ("FirstName8", "LastName8", LocalDate.of(1982, 6, 3));
-            Human  person9 = new Human ("FirstName9", "LastName9", LocalDate.of(1990, 8, 27));
-            Human  person10 = new Human ("FirstName10", "LastName10", LocalDate.of(1994, 5, 15));
+            Human  person6 = new Human ("Name6", "98", LocalDate.of(1980, 5, 10));
+            Human  person7 = new Human ("Name7", "5", LocalDate.of(1981, 3, 20));
+            Human  person8 = new Human ("Name8", "78", LocalDate.of(1982, 6, 3));
+            Human  person9 = new Human ("Name9", "8", LocalDate.of(1990, 8, 27));
+            Human  person10 = new Human ("Name10", "47", LocalDate.of(1994, 5, 15));
 
             // Fourth level
-            Human  person11 = new Human ("FirstName11", "LastName11", LocalDate.of(2010, 6, 3));
-            Human  person12 = new Human ("FirstName12", "LastName12", LocalDate.of(2012, 10, 11));
-            Human  person13 = new Human ("FirstName13", "LastName13", LocalDate.of(2012, 10, 11));
+            Human  person11 = new Human ("Name11", "74", LocalDate.of(2010, 6, 3));
+            Human  person12 = new Human ("Name12", "44", LocalDate.of(2012, 10, 11));
+            Human  person13 = new Human ("Name13", "46", LocalDate.of(2012, 10, 11));
 
             // Build nodes
             TreeItem<Human > person6Node = new TreeItem<>(person6);
@@ -217,12 +217,12 @@ public class Controller {
         }
 
         // Returns Person Id TreeTableColumn
-        public static TreeTableColumn<Human , Integer> getIdColumn()
+        /*public static TreeTableColumn<Human , Integer> getIdColumn()
         {
             TreeTableColumn<Human , Integer> idColumn = new TreeTableColumn<>("Id");
             idColumn.setCellValueFactory(new TreeItemPropertyValueFactory<>("personId"));
             return idColumn;
-        }
+        }*/
 
         // Returns First Name TreeTableColumn
         public TreeTableColumn<Human , String> getFirstNameColumn()
