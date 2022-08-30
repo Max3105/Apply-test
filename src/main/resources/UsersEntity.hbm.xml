@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.demo.entity.UsersEntity" table="users" schema="humans">
+        <id name="idusers">
+            <column name="idusers" sql-type="int"/>
+        </id>
+        <property name="name">
+            <column name="Name" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="age">
+            <column name="Age" sql-type="int"/>
+        </property>
+        <property name="birthday">
+            <column name="Birthday" sql-type="date"/>
+        </property>
+    </class>
+</hibernate-mapping>

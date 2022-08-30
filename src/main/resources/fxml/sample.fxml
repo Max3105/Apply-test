@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="mainPane" stylesheets="@../css/style.css"
+            xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demo.controllers.Controller" >
+    <children>
+        <TreeTableView fx:id="testTreeTable" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="5.0"
+                       AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" styleClass="mainTable">
+            <columnResizePolicy>
+                <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TreeTableView>
+        <HBox prefHeight="50.0" spacing="5.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0"
+              AnchorPane.rightAnchor="5.0">
+            <children>
+                <Button fx:id="btnAdd" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                        mnemonicParsing="false" onAction="#actionButtonPressed" text="Add" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="btnEdit" contentDisplay="CENTER" maxHeight="1.7976931348623157E308"
+                        maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionButtonPressed" text="Edit"
+                        HBox.hgrow="ALWAYS"/>
+                <Button fx:id="btnDelete" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                        mnemonicParsing="false" onAction="#actionButtonPressed" text="Delete" HBox.hgrow="ALWAYS"/>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

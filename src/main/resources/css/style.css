@@ -1,0 +1,39 @@
+.mainPane {
+    -fx-background-color: #1d1d1d;
+}
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #e7e1e7;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #554e4e;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.mainTable {
+    -fx-base: #f5ecec;
+    -fx-control-inner-background: #d2cfcf;
+    -fx-background-color: #f6f5f5;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+
+.tree-view {
+
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+.mainTable:selected {
+    -fx-background-color: blue;
+}
+.text-field {
+    -fx-background-color: #e8e4e4;
+}
